@@ -1,12 +1,3 @@
-<style>
-    .divider:after,
-    .divider:before {
-    content: "";
-    flex: 1;
-    height: 1px;
-    background: #eee;
-    }
-</style>
 
 <section class="vh-100">
   <div class="container py-5 h-100">
@@ -16,14 +7,14 @@
         <form>
           <!-- Email input -->
           <div data-mdb-input-init class="form-outline mb-4">
-            <input type="email" id="form1Example13" class="form-control form-control-lg" />
             <label class="form-label" for="form1Example13">Email address</label>
+            <input type="email" id="form1Example13" class="form-control form-control-lg" />
           </div>
 
           <!-- Password input -->
           <div data-mdb-input-init class="form-outline mb-4">
-            <input type="password" id="form1Example23" class="form-control form-control-lg" />
             <label class="form-label" for="form1Example23">Password</label>
+            <input type="password" id="form1Example23" class="form-control form-control-lg" />
           </div>
 
           <div class="d-flex justify-content-around align-items-center mb-4">

@@ -3,7 +3,7 @@
 class Home extends Controller {
     public function index() {
         $data['judul'] = 'Home';
-        $data['css'] = 'nav.css';
+        $data['css'] = ['nav.css','styles.css', 'ionicons.min.css'];
         $data['js'] = 'script.js';
         $this->view('templates/header', $data);
         $this->view('templates/navbar', $data);
@@ -14,7 +14,7 @@ class Home extends Controller {
     public function login() 
     {
         $data['judul'] = 'Login';
-        $data['css'] = 'masuk.css';
+        $data['css'] = ['masuk.css','styles.css', 'ionicons.min.css'];
         $this->view('templates/header', $data);
         $this->view('home/login', $data);
         $this->view('templates/footer', $data);
@@ -22,7 +22,7 @@ class Home extends Controller {
 
     public function about() {
         $data['judul'] = 'About';
-        $data['css'] = 'nav.css';
+        $data['css'] = ['nav.css','styles.css', 'ionicons.min.css'];
         $data['js'] = 'script.js';
         $this->view('templates/header', $data);
         $this->view('templates/navbar', $data);
@@ -31,8 +31,8 @@ class Home extends Controller {
     }
 
     public function guide() {
-        $data['judul'] = 'About';
-        $data['css'] = 'nav.css';
+        $data['judul'] = 'Guide';
+        $data['css'] = ['nav.css','styles.css', 'ionicons.min.css'];
         $data['js'] = 'script.js';
         $this->view('templates/header', $data);
         $this->view('templates/navbar', $data);
@@ -42,7 +42,7 @@ class Home extends Controller {
 
     public function features() {
         $data['judul'] = 'Features';
-        $data['css'] = 'nav.css';
+        $data['css'] = ['nav.css','styles.css', 'ionicons.min.css'];
         $data['js'] = 'script.js';
         $this->view('templates/header', $data);
         $this->view('templates/navbar', $data);

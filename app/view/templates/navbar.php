@@ -21,17 +21,17 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
-                <li class="nav-item me-3">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-4">
+                <li class="nav-item me-4">
                     <a class="nav-link" href="<?= BASEURL; ?>/home/index">Home</a>
                 </li>
-                <li class="nav-item me-3">
+                <li class="nav-item me-4">
                     <a class="nav-link" href="<?= BASEURL; ?>/home/about">About</a>
                 </li>
-                <li class="nav-item me-3">
+                <li class="nav-item me-4">
                     <a class="nav-link" href="<?= BASEURL; ?>/home/features">Features</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item me-4">
                     <a class="nav-link" href="<?= BASEURL; ?>/home/guide">Guide</a>
                 </li>
             </ul>
@@ -40,7 +40,7 @@
                     <button
                         data-mdb-ripple-init
                         type="button"
-                        class="btn btn-primary btn-md me-3"
+                        class="btn btn-primary btn-md me-1"
                     >
                         Masuk
                     </button>

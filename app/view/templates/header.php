@@ -21,9 +21,15 @@
 
     <!-- Custom CSS (hanya dimuat jika ada) -->
     <?php if (isset($data['css'])): ?>
-        <link rel="stylesheet" href="<?= BASEURL; ?>/css/<?= $data['css']; ?>">
+        <?php if (is_array($data['css'])): ?>
+            <?php foreach ($data['css'] as $cssFile): ?>
+                <link rel="stylesheet" href="<?= BASEURL; ?>/css/<?= $cssFile; ?>">
+            <?php endforeach; ?>
+        <?php else: ?>
+            <link rel="stylesheet" href="<?= BASEURL; ?>/css/<?= $data['css']; ?>">
+        <?php endif; ?>
     <?php endif; ?>
-    
+
     <script>
     const BASEURL = "<?= BASEURL; ?>";
     </script>

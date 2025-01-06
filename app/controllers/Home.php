@@ -9,15 +9,17 @@ class Home extends Controller {
         $this->view('templates/navbar', $data);
         $this->view('home/index', $data);
         $this->view('templates/footer', $data);
+        $this->view('templates/main_footer', $data);
     }
 
     public function login() 
     {
         $data['judul'] = 'Login';
-        $data['css'] = ['masuk.css','styles.css', 'ionicons.min.css'];
+        $data['css'] = ['styles.css', 'ionicons.min.css'];
         $this->view('templates/header', $data);
         $this->view('home/login', $data);
         $this->view('templates/footer', $data);
+        $this->view('templates/main_footer', $data);
     }
 
     public function about() {
@@ -28,6 +30,7 @@ class Home extends Controller {
         $this->view('templates/navbar', $data);
         $this->view('home/about', $data);
         $this->view('templates/footer', $data);
+        $this->view('templates/main_footer', $data);
     }
 
     public function guide() {
@@ -38,6 +41,7 @@ class Home extends Controller {
         $this->view('templates/navbar', $data);
         $this->view('home/guide', $data);
         $this->view('templates/footer', $data);
+        $this->view('templates/main_footer', $data);
     }
 
     public function features() {
@@ -48,5 +52,6 @@ class Home extends Controller {
         $this->view('templates/navbar', $data);
         $this->view('home/features', $data);
         $this->view('templates/footer', $data);
+        $this->view('templates/main_footer', $data);
     }
 }

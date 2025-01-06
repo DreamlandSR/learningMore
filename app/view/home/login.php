@@ -1,24 +1,25 @@
-
-<section class="vh-100">
-  <div class="container py-5 h-100">
-    <div class="row d-flex align-items-center justify-content-center h-100">
+<section class="vh-100 overflow-auto">
+  <div class="container h-100 px-3">
+    <div class="row d-flex align-items-center justify-content-between h-100">
       
-      <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+      <!-- Form login -->
+      <div class="col-12 col-md-6 col-xl-5 p-4">
         <form>
+          <h1 class="mb-4">Login</h1>
+
           <!-- Email input -->
           <div data-mdb-input-init class="form-outline mb-4">
             <label class="form-label" for="form1Example13">Email address</label>
-            <input type="email" id="form1Example13" class="form-control form-control-lg" />
+            <input type="email" id="form1Example13" class="form-control form-control-lg" placeholder="Masukkan email anda" />
           </div>
 
           <!-- Password input -->
           <div data-mdb-input-init class="form-outline mb-4">
             <label class="form-label" for="form1Example23">Password</label>
-            <input type="password" id="form1Example23" class="form-control form-control-lg" />
+            <input type="password" id="form1Example23" class="form-control form-control-lg" placeholder="Masukkan password anda" />
           </div>
 
-          <div class="d-flex justify-content-around align-items-center mb-4">
-            <!-- Checkbox -->
+          <div class="d-flex justify-content-between align-items-center mb-4">
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
               <label class="form-check-label" for="form1Example3"> Remember me </label>
@@ -26,26 +27,15 @@
             <a href="#!">Forgot password?</a>
           </div>
 
-          <!-- Submit button -->
-          <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg btn-block">Sign in</button>
-
-          <div class="divider d-flex align-items-center my-4">
-            <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
-          </div>
-
-          <a data-mdb-ripple-init class="btn btn-primary btn-lg btn-block" style="background-color: #3b5998" href="#!"
-            role="button">
-            <i class="fab fa-facebook-f me-2"></i>Continue with Facebook
-          </a>
-          <a data-mdb-ripple-init class="btn btn-primary btn-lg btn-block" style="background-color: #55acee" href="#!"
-            role="button">
-            <i class="fab fa-twitter me-2"></i>Continue with Twitter</a>
-
+          <button type="submit" class="btn btn-primary btn-lg btn-block mb-5">Sign in</button>
         </form>
       </div>
-      <div class="col-md-8 col-lg-7 col-xl-6">
-        <img src="<?=BASEURL; ?>/img/draw2.svg"
-          class="img-fluid" alt="Phone image">
+
+      <!-- Gambar: disembunyikan di mode HP -->
+      <div class="col-12 col-md-6 d-none d-md-block px-md-3">
+        <img src="<?=BASEURL; ?>/img/Screen.jpg"
+          class="img-fluid h-100 w-100 object-fit-cover rounded-3 shadow p-2" 
+          alt="Phone image" style="max-height: 90vh;">
       </div>
     </div>
   </div>
